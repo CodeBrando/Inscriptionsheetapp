@@ -1,0 +1,58 @@
+.student-name{
+    text-decoration:underline;
+}
+
+.student-career{
+    text-decoration:underline;
+}
+
+
+.container-students{
+    display: flex;
+    justify-content: space-between;
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.icon{
+    padding: 0.5vw;
+}
+
+.career-name{
+    text-decoration: underline;
+}
+
+.selectedCareer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-career {
+    display: inline-block;
+    background: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+  .btn-career:focus {
+    outline: none;
+  }
+  .btn-career:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-career-block {
+    display: block;
+    width: 100%;
+  }
