@@ -74,7 +74,6 @@ export class FormComponent implements OnInit {
       career: this.career
     }
     this.studentService.enrollStudent(student).subscribe();
-    this.uiService.toggleLastEnrolled();
     Swal.fire({
       position: 'top-end',
       icon: 'success',
@@ -88,6 +87,7 @@ export class FormComponent implements OnInit {
     this.email = "";
     this.phoneNumber = "";
     this.career;
+    this.uiService.toggleSelectedCareer();
   }
 
   toggleShowCareers(){

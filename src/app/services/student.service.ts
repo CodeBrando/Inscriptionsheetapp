@@ -21,11 +21,6 @@ export class StudentService {
     return this.http.get<Student[]>(`${this.apiServerUrl}/students`);
   }
 
-  public getStudentByStudentCode(student: Student): Observable<Student>{
-    return this.http.get<Student>(`${this.apiServerUrl}/students/${student.career}`)
-  }
-
-
   public updateStudent(student: Student): Observable<Student> {
     return this.http.put<Student>(`${this.apiServerUrl}/students/${student.studentCode}`, student);
   }

@@ -73,8 +73,9 @@ export class StudentsComponent implements OnInit {
           'Student has been deleted.',
           'success'
         )
+        this.uiService.toggleLastEnrolled();
         this.studentService.deleteStudent(student).subscribe();
-        location.reload();
+        
       }
     })
     
